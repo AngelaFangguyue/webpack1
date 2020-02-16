@@ -1,9 +1,9 @@
 npm run build &&
-git checkout gh_pages &&
-rm -rf *.html *.js *.css *.png &&
+git checkout gh-pages &&
+rm -rf *.html *.js *.css *.png *.jpg &&
 mv dist/* ./ &&
 rm -rf dist &&
 git add . &&
 git commit -v "update" &&
-git push --set-upstream webpack11 gh_pages &&
+git push &&
 git checkout -
